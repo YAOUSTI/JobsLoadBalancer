@@ -375,6 +375,7 @@ When you launch 100 jobs to the default queue using the Horizon load balancing s
 5. **Monitoring**: You can monitor the job processing in real-time using the Horizon UI.
 
 This setup ensures efficient job processing and optimal resource utilization, leveraging Horizon's dynamic worker management and real-time monitoring capabilities.
+
 ---
 
 ## Key Differences
