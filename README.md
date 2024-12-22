@@ -3,7 +3,7 @@
 This Laravel application demonstrates two approaches to load balancing queued jobs. It includes:
 
 1. **Custom Solution**: Works with any queue connection and uses system-configured Supervisor workers.
-2. **Horizon Solution**: Designed for Redis-backed queues and managed by Laravel Horizon.
+2. **Horizon Solution**: Designed for Redis-backed queues and managed by Laravel Horizon (Requires PHP 8.0+).
 
 ---
 
