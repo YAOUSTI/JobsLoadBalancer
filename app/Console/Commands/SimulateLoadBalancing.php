@@ -45,7 +45,6 @@ class SimulateLoadBalancing extends Command
 
         // 4) Loop until all jobs are assigned to existing or new workers
         while ($pendingJobs->isNotEmpty()) {
-
             // Try to find an idle worker
             $idleWorker = Worker::where('status', 'idle')->first();
             if ($idleWorker) {
@@ -74,6 +73,7 @@ class SimulateLoadBalancing extends Command
                     // We are at max capacity, wait for a worker to become idle
                     $this->info("All {$maxWorkers} workers are busy. Waiting for an idle worker...");
                     // Check again
+                    sleep(1);
                     continue;
                 }
             }
